@@ -6,9 +6,7 @@ This will include
 - CSS
 - Vuex (Centralized place to store data to provide it to all components)
 - Javascript
-<br/>
-live site on
-<br/>
+
 [Click to see deployed site](https://63b44a05af32d10fcb52f28e--ubiquitous-axolotl-441572.netlify.app/#/)
 ## Project setup
 ```
