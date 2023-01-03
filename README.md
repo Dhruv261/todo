@@ -1,5 +1,12 @@
 # todo
 
+Use this for project for 2nd year college purpose.
+This will include 
+- Vue JS
+- CSS
+- Vuex (Centralized place to store data to provide it to all components)
+- Javascript
+
 ## Project setup
 ```
 npm install
