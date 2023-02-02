@@ -6,12 +6,7 @@
         :class="data.type === 'Personal' ? 'pink-highlight' : 'blue-highlight'"
       >
         <div class="task-left">
-          <input
-            type="checkbox"
-            name=""
-            id=""
-            @change="changeComp($event, data.index)"
-          />
+          <input type="checkbox" name="" id="" @change="changeComp($event, data.index)" />
 
           <div v-if="data.completed === true">
             <div class="completed-task margin-left-10px">
@@ -24,9 +19,7 @@
         </div>
 
         <div class="task-right">
-          <button @click="deleteTask(index)" class="del-btn">
-            Delete
-          </button>
+          <button @click="deleteTask(index)" class="del-btn">Delete</button>
         </div>
       </div>
     </div>
@@ -38,9 +31,14 @@ export default {
   name: "List",
   data() {
     return {
-      taskList: this.$store.state.todoArray,
+      // taskList: this.$store.state.todoArray,
       ifIsBusiness: this.$store.state.bsClr,
     };
+  },
+  computed: {
+    taskList() {
+      return this.$store.state.todoArray;
+    },
   },
   methods: {
     changeComp(e, i) {
@@ -53,7 +51,7 @@ export default {
 };
 </script>
 
-<style lang = "scss">
+<style lang="scss">
 .pink-highlight {
   background-color: #c080ff65;
 }
@@ -116,4 +114,3 @@ input[type="checkbox"]:checked {
   box-shadow: inset 0 0 0 20px rgb(0, 255, 0);
 }
 </style>
-
