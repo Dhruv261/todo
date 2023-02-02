@@ -66,12 +66,16 @@ export default {
       }
     };
 
-    const taskData = () => {
-      const tasksFromLocalStorage = localStorage.getItem("todo");
-      console.log("tasksFromLocalStorage: ", tasksFromLocalStorage);
-    };
+    const localStorageData = JSON.parse(localStorage.getItem("task"));
+    console.log(localStorageData);
+    this.$store.state.todoArray = localStorageData || [];
+    // const taskData = () => {
+    //   const tasksFromLocalStorage = localStorage.getItem("todo");
+    //   console.log("tasksFromLocalStorage: ", JSON.parse(tasksFromLocalStorage));
+    //   this.$store.state.todoArray = JSON.parse(localStorage.getItem("todo") || []);
+    // };
     localStorageName();
-    taskData();
+    // taskData();
   },
   methods: {
     addButtonClick() {
