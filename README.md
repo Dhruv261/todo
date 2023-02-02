@@ -7,7 +7,7 @@ This will include
 - Vuex (Centralized place to store data to provide it to all components)
 - Javascript
 
-[Click to see deployed site](https://63b44a05af32d10fcb52f28e--ubiquitous-axolotl-441572.netlify.app/#/)
+[Click to see deployed site](https://ubiquitous-axolotl-441572.netlify.app/#/)
 ## Project setup
 ```
 npm install
